@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.685);
+  backdrop-filter: blur(5px);
+  border: none;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  padding: 10px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar-title {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 100px;
+}
+
+.navbar-title h1 {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.navbar-title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar-items {
+  display: flex;
+  gap: 40px;
+  font-size: 17px;
+  color: #fff;
+  font-weight: 300;
+  margin-right: 100px;
+}
+
+.navbar-items p {
+  margin: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar-items p::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.navbar-items p:hover {
+  color: #6e6e6e;
+}
+
+.navbar-items p:hover::after {
+  width: 100%;
+}
+
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: 100;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+.navbar-icons span {
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.navbar-icon {
+  font-size: 24px;
+}
+
+.search-field {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+}
+
+.search-field input {
+  padding: 5px;
+  font-family: "Poppins", sans-serif;
+}
